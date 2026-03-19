@@ -3,11 +3,15 @@ body {
     background-color: #aeafb4;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
+    width: 100%;
     padding: 20px;
 }
 
@@ -34,9 +38,8 @@ section {
 .image-section img {
     width: 200px;
     border-radius: 50%;
-    border: 4px solid rgb(207, 202, 202); /* marco */
+    border: 4px solid rgb(207, 202, 202);
 }
-
 
 h2 {
     font-family: 'Courier New', monospace;
@@ -73,18 +76,29 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+.interactive {
+    text-align: left; 
+}
+
+.interactive input,
+.interactive button,
+.interactive .result {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
 input {
     padding: 6px;
     font-family: Verdana, sans-serif;
 }
 
 button {
-    margin-top: 10px;
     padding: 8px 12px;
     border: none;
-    background-color: #437ba0;
+    background-color: #5f686d;
     color: white;
-    border-radius: 5px;
+    border-radius: 1.5px;
     cursor: pointer;
     font-family: Arial, sans-serif;
 }
