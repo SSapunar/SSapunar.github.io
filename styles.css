@@ -112,17 +112,3 @@ button:hover {
     font-weight: bold;
     color: rgb(13, 14, 13);
 }
-
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .image-section img {
-        width: 150px;
-    }
-
-    table, th, td {
-        font-size: 14px;
-    }
-}
