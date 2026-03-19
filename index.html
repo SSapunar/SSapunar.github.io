@@ -4,44 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
-
-    <!-- Conexión con CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <script>
-        function updateText() {
-            var inputValue = document.getElementById("userInput").value;
-            document.getElementById("outputText").innerText = inputValue;
+        function Text() {
+            var i = document.getElementById("Input").value;
+            document.getElementById("output").innerText = i;
         }
     </script>
 </head>
-
-<body>
-
+<body>  
 <div class="container">
 
     <h1 class="title">My Personal Page</h1>
 
+    <section class="image-section">
+        <img src="https://avatars.githubusercontent.com/u/130682835?v=4" alt="Profile Image">
+    </section>
+
     <section class="info">
         <p><strong>Name:</strong> Simon Sapunar</p>
         <p><strong>Major:</strong> Computer Engineering</p>
-        <p><strong>Year of Enrollment:</strong> 2023</p>
+        <p><strong>Year of Enrollment:</strong> 2022</p>
         <p><strong>GitHub:</strong> 
             <a href="https://github.com/SSapunar" target="_blank">
-                Visit my GitHub
+                My GitHub
             </a>
         </p>
     </section>
 
-    <section class="image-section">
-        <img src="https://via.placeholder.com/200" alt="Profile Image">
-    </section>
 
-    <section class="summary">
+    <section class="Summary">
         <h2>About Me</h2>
         <p>
-            I am a Computer Engineering student interested in programming, databases, 
-            and building software solutions. I enjoy learning new technologies and solving problems.
+            I am a computer engineering student, and I am very interested in databases and how data can be stored, managed, and analyzed efficiently. 
+            I enjoy understanding how systems are structured and how they interact. 
+            I have some experience with programming concepts and database systems.
         </p>
     </section>
 
@@ -51,7 +49,7 @@
             <li>Programming</li>
             <li>Gaming</li>
             <li>Technology</li>
-            <li>Sports</li>
+            <li>D&D Player</li>
         </ul>
     </section>
 
@@ -64,27 +62,25 @@
             </tr>
             <tr><td>Python</td><td>Expert</td></tr>
             <tr><td>JavaScript</td><td>Basic</td></tr>
-            <tr><td>HTML/CSS</td><td>Basic</td></tr>
-            <tr><td>Git</td><td>Basic</td></tr>
+            <tr><td>HTML/CSS</td><td>Medium</td></tr>
             <tr><td>Excel</td><td>Advanced</td></tr>
             <tr><td>SQL</td><td>Expert</td></tr>
-            <tr><td>Ruby</td><td>Basic</td></tr>
+            <tr><td>Ruby</td><td>Started</td></tr>
             <tr><td>English</td><td>Advanced</td></tr>
             <tr><td>Spanish</td><td>Native</td></tr>
         </table>
     </section>
 
     <section class="interactive">
-        <h2>Interactive Section</h2>
-        <p>Write something:</p>
+        <h2>Interactive</h2>
+        <p>Write:</p>
 
-        <input type="text" id="userInput" placeholder="Type here">
-        <button onclick="updateText()">Update</button>
+        <input type="text" id="Input" placeholder="Type here">
+        <button onclick="Text()">Update</button>
 
-        <p class="result">Result: <span id="outputText">Nothing yet</span></p>
+        <p class="result">Result: <span id="output">Nothing yet</span></p>
     </section>
 
 </div>
-
 </body>
 </html>
